@@ -1,0 +1,23 @@
+.tippny-popup{
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    /* border: solid 1px gainsboro; */
+}
+
+.tippny-brand-logo-container{
+    width: 100px;
+}
+
+.tippny-brand-logo{
+    max-width: 100%;
+}
+
+.tippny-popup-inner{
+    margin: 10px;
+    width: 44%;
+}
+
+.subscribe-btn-div{
+    margin-top: 5%;
+}

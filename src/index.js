@@ -6,7 +6,7 @@ class App extends React.Component {
     constructor() {
       super();
       this.state = {
-        showPopup: false
+        showPopup: true
       };
     }
     togglePopup() {
@@ -20,9 +20,10 @@ class App extends React.Component {
           <button onClick={this.togglePopup.bind(this)}>show popup</button>
   
           {this.state.showPopup ? 
-            <PopupController
-              text='Close Me'
-              closePopup={this.togglePopup.bind(this)}
+            <PopupController 
+                brandLogo="https://pbs.twimg.com/profile_images/1042355141490483200/lbJSS4sY_400x400.jpg" 
+                brandName="flipkart"
+                closePopup={this.togglePopup.bind(this)}
             />
             : null
           }
