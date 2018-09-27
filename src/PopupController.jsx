@@ -73,7 +73,7 @@ class PopPupPresentationalComponent extends React.Component {
         
         <div className="row powered-by-div">
           <div className="col-1 tippny-logo">
-            <img className="img-responsive tippny-logo" src="https://cdn1.imggmi.com/uploads/2018/9/27/d7308d1adea7ef6b069f9403e0d15df1-full.jpg"></img>
+            <img className="tippny-logo" src="https://cdn1.imggmi.com/uploads/2018/9/27/d7308d1adea7ef6b069f9403e0d15df1-full.jpg"></img>
           </div>
           <div className="col-11">Powered by <a href="https://tippny.com/">Tippny</a></div>
         </div>
