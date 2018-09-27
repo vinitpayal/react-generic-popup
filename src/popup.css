@@ -4,6 +4,7 @@
     left: 30%;
     width: 500px;
     border: solid 1px gainsboro;
+    z-index: 1000;
     background-color: ghostwhite;
 }
 

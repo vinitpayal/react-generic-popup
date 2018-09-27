@@ -10,6 +10,7 @@ class PopPupPresentationalComponent extends React.Component {
 
   componentDidMount() {
     document.addEventListener('fb_init', e => FB.XFBML.parse());
+    this.setState({'user_ref': this.uuidv4()});
   }
 
   uuidv4() {
@@ -20,6 +21,7 @@ class PopPupPresentationalComponent extends React.Component {
   }
 
   logCheckboxEvent() {
+    console.log('--- called ------');
     window.tippnySendCheckboxSelectionEventAfterClick(this.state.user_ref, {});
     return true;
   }
