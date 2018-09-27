@@ -2,7 +2,8 @@
     position: fixed;
     top: 20%;
     left: 30%;
-    /* border: solid 1px gainsboro; */
+    width: 500px;
+    border: solid 1px gainsboro;
 }
 
 .tippny-brand-logo-container{
@@ -15,9 +16,30 @@
 
 .tippny-popup-inner{
     margin: 10px;
-    width: 44%;
 }
 
 .subscribe-btn-div{
     margin-top: 5%;
+}
+
+.tippny-close{
+    margin-left: 97%;
+}
+
+.tippny-logo{
+    width: 20px;
+}
+
+.powered-by-div{
+    margin-top: 20px;
+}
+
+.offers-div{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-div{
+    margin-top: 5px;
+    text-align: center;
 }
