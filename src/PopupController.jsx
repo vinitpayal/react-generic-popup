@@ -22,7 +22,7 @@ class PopPupPresentationalComponent extends React.Component {
 
   logCheckboxEvent() {
     console.log('--- called ------');
-    window.tippnySendCheckboxSelectionEventAfterClick(this.state.user_ref, {});
+    window.tippnySendCheckboxSelectionEventAfterClick(this.state.user_ref, {"user_ref": this.state.user_ref});
     return true;
   }
   
