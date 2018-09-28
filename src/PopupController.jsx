@@ -70,7 +70,7 @@ class PopPupPresentationalComponent extends React.Component {
         </div>
 
         <div className="subscribe-btn-div d-flex justify-content-center align-items-center">
-          <button type="button" onClick={this.logCheckboxEvent.bind(this) && this.props.closePopup} className="btn btn-primary subscribe-btn">Subscribe</button>
+          <button type="button" onClick={this.logCheckboxEvent.bind(this)} className="btn btn-primary subscribe-btn">Subscribe</button>
         </div>  
         
         <div className="row powered-by-div">
