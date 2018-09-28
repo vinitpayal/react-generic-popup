@@ -26,7 +26,7 @@ class PopPupPresentationalComponent extends React.Component {
       "origin": 'popup',
       "brand_access_token": "YrET5zvlHX9dOSWlPQ2aKk6sVjryI9uO"
     });
-    return true;
+    this.props.closePopup();
   }
   
   render() {
