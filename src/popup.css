@@ -60,3 +60,16 @@
 .tippny-popup-body-text {
     /* font-weight: 400; */
 }
+
+@media (min-width: 768px){
+    .tippny-popup{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        left: unset;
+    }
+
+    .tippny-popup-messenger-div {
+        margin-left: 100px;
+    }
+}

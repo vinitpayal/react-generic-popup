@@ -5,19 +5,11 @@ class PopPupPresentationalComponent extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {"user_ref": "popup_"+this.uuidv4()};
+    this.state = {"user_ref": "popup_"+props.userRef};
   }
 
   componentDidMount() {
     document.addEventListener('fb_init', e => FB.XFBML.parse());
-    this.setState({'user_ref': this.uuidv4()});
-  }
-
-  uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-      return v.toString(16);
-    });
   }
 
   logCheckboxEvent() {
@@ -80,7 +72,7 @@ class PopPupPresentationalComponent extends React.Component {
           <div className="col-1 tippny-logo">
             <img className="tippny-logo" src="https://cdn1.imggmi.com/uploads/2018/9/27/d7308d1adea7ef6b069f9403e0d15df1-full.jpg"></img>
           </div>
-          <div className="col-11">Powered by <a href="https://tippny.com/">Tippny</a></div>
+          <div className="col-10">Powered by <a href="https://tippny.com/">Tippny</a></div>
         </div>
      </div>
     );
@@ -93,7 +85,7 @@ export default class PopupController extends React.Component {
         <div className='tippny-popup'>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></link>
           <div className='tippny-popup-inner'>
-            <PopPupPresentationalComponent brandLogo={this.props.brandLogo} brandName={this.props.brandName} closePopup={this.props.closePopup} />
+            <PopPupPresentationalComponent userRef={this.props.userRef} brandLogo={this.props.brandLogo} brandName={this.props.brandName} closePopup={this.props.closePopup} />
           </div>
         </div>
       );
