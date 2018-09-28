@@ -61,7 +61,7 @@
     /* font-weight: 400; */
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .tippny-popup{
         position: fixed;
         bottom: 0px;
