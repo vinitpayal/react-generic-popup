@@ -24,7 +24,7 @@ class PopPupPresentationalComponent extends React.Component {
     window.tippnySendCheckboxSelectionEventAfterClick(this.state.user_ref, {
       "user_ref": this.state.user_ref,
       "origin": 'popup',
-      "brand_access_token": "YrET5zvlHX9dOSWlPQ2aKk6sVjryI9uO"
+      "access_token": "YrET5zvlHX9dOSWlPQ2aKk6sVjryI9uO"
     });
     this.props.closePopup();
   }
@@ -67,7 +67,7 @@ class PopPupPresentationalComponent extends React.Component {
         </div>        
         
         <div className="row">
-          <div className="fb-messenger-checkbox" origin="https://shop.tippny.com" page_id="2011137462500782" 
+          <div className="fb-messenger-checkbox tippny-popup-messenger-div" origin="https://shop.tippny.com" page_id="2011137462500782" 
             messenger_app_id="293870131126505" user_ref={this.state.user_ref}>
           </div>
         </div>
