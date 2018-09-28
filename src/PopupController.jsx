@@ -34,7 +34,7 @@ class PopPupPresentationalComponent extends React.Component {
               <img className="img-responsive tippny-brand-logo" src={this.props.brandLogo}></img>
             </div>
             <div className="col-6">
-                <span>{this.props.brandName}</span>
+                <span className="tippny-brand-name">{this.props.brandName}</span>
             </div>
             <div className="col-2">
               <button onClick={this.props.closePopup} className="close tippny-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -43,13 +43,13 @@ class PopPupPresentationalComponent extends React.Component {
 
         <div className="row">
           <div className="col-12 offers-div">
-            <strong>Festive Offers ONLY ON Facebook Messenger!</strong>
+            <strong className='tippny-popup-body-text'>Festive Offers ONLY ON Facebook Messenger!</strong>
           </div>
         </div>
 
         <div className="row">
           <div className="col-12 text-div">
-            <strong>
+            <strong className='tippny-popup-body-text'>
               Get Exclusive Deals and Notifications on FB Messenger via our partner Tippny. 
             </strong>
           </div>
@@ -57,7 +57,7 @@ class PopPupPresentationalComponent extends React.Component {
 
         <div className="row">
           <div className="col-12 text-div">
-            <strong>
+            <strong className='tippny-popup-body-text'>
               Tick the box below and tap subscribe! 
             </strong>
           </div>

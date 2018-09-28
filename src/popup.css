@@ -45,3 +45,18 @@
     margin-top: 5px;
     text-align: center;
 }
+
+.tippny-brand-name {
+    position: absolute;
+    top: 11px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.fb-messenger-checkbox {
+    margin-left: 150px;
+}
+
+.tippny-popup-body-text {
+    font-weight: 400;
+}
