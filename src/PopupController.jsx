@@ -11,8 +11,8 @@ class PopPupPresentationalComponent extends React.Component {
   componentDidMount() {
     console.log("componentDidMount called");
     document.addEventListener('fb_init', e => FB.XFBML.parse());
-    console.log("user_ref:", this.props.userRef);
-    this.setState({'user_ref': this.props.userRef});
+    // console.log("user_ref:", this.props.userRef);
+    // this.setState({'user_ref': this.props.userRef});
   }
 
   logCheckboxEvent() {
@@ -25,6 +25,7 @@ class PopPupPresentationalComponent extends React.Component {
   }
   
   render() {
+    console.log("redering with user_ref:", this.state.user_ref, this.props.userRef);
     return (
       <div className="container">
         <div className="row">
