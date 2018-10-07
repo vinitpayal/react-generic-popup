@@ -5,7 +5,7 @@
     width: 500px;
     border: solid 1px gainsboro;
     z-index: 1000;
-    /* background-color: ghostwhite; */
+    background-color: white;
 }
 .tippny-brand-logo-container{
     width: 100px;
@@ -104,5 +104,8 @@
 
     .tippny-popup-messenger-div {
         margin-left: 100px;
+    }
+    .close-bottom-btn {
+        font-size: 12px;
     }
 }
