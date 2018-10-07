@@ -60,7 +60,7 @@ class PopPupPresentationalComponent extends React.Component {
             origin="https://shop.tippny.com" 
             page_id="2011137462500782" 
             messenger_app_id="293870131126505" 
-            user_ref={this.uuidv4()}>
+            user_ref={this.state.user_ref}>
           </div>
         </div>
 
