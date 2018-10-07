@@ -5,15 +5,15 @@
     width: 500px;
     border: solid 1px gainsboro;
     z-index: 1000;
-    background-color: ghostwhite;
+    /* background-color: ghostwhite; */
 }
-
 .tippny-brand-logo-container{
     width: 100px;
 }
 
 .tippny-brand-logo{
     max-width: 100%;
+    border-radius: 25px;
 }
 
 .tippny-popup-inner{
@@ -34,15 +34,16 @@
 
 .powered-by-div{
     margin-top: 20px;
+    color: gray;
 }
 
 .offers-div{
     text-align: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .text-div{
-    margin-top: 5px;
+    margin-top: 19px;
     text-align: center;
 }
 
@@ -53,12 +54,43 @@
     text-transform: capitalize;
 }
 
+.popup-heading-text {
+    color: #ffb84d;
+    font-size: x-large;
+    font-variant-caps: all-petite-caps;
+}
+
 .tippny-popup-messenger-div {
     margin-left: 150px;
+    margin-top: 8px;
 }
 
 .tippny-popup-body-text {
+    color: black;
     /* font-weight: 400; */
+}
+
+.bottom-btn-text-span {
+    position: relative;
+    top: 22%;
+    cursor: pointer;
+}
+
+.bottom-btn-row {
+    height: 45px;
+    background-color: whitesmoke;
+}
+
+.bottom-btn-text-span {
+    font-weight: bold;
+}
+
+.close-bottom-btn {
+    color: darkgray;
+}
+
+.subscribe-btn {
+    color: blue;
 }
 
 @media (max-width: 768px){

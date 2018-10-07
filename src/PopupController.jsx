@@ -24,39 +24,39 @@ class PopPupPresentationalComponent extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-            <div className="col-2 offset-2 tippny-brand-logo-container">
-              <img className="img-responsive tippny-brand-logo" src={this.props.brandLogo}></img>
-            </div>
-            <div className="col-6">
-                <span className="tippny-brand-name">{this.props.brandName}</span>
-            </div>
-            <div className="col-2">
+        {/* <div className="row">
+            <div className="col-1 offset-11">
               <button onClick={this.props.closePopup} className="close tippny-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
+        </div> */}
+
+        <div className="row">
+          <div className="col-2 offset-5 tippny-brand-logo-container">
+            <img className="img-rounded img-responsive tippny-brand-logo" src={this.props.brandLogo}></img>
+          </div>
         </div>
 
         <div className="row">
           <div className="col-12 offers-div">
-            <strong className='tippny-popup-body-text'>Festive Offers ONLY ON Facebook Messenger!</strong>
+            <strong className='popup-heading-text'>Special Festival Offer!!!</strong>
           </div>
         </div>
 
         <div className="row">
           <div className="col-12 text-div">
-            <strong className='tippny-popup-body-text'>
+            <span className='tippny-popup-body-text'>
               Get Exclusive Deals and Notifications on FB Messenger via our partner Tippny. 
-            </strong>
+            </span>
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-12 text-div">
-            <strong className='tippny-popup-body-text'>
+            <span className='tippny-popup-body-text'>
               Tick the box below and tap subscribe! 
-            </strong>
+            </span>
           </div>
-        </div>        
+        </div>         */}
         
         <div className="row">
           <div className="fb-messenger-checkbox tippny-popup-messenger-div" origin="https://shop.tippny.com" page_id="2011137462500782" 
@@ -64,15 +64,24 @@ class PopPupPresentationalComponent extends React.Component {
           </div>
         </div>
 
-        <div className="subscribe-btn-div d-flex justify-content-center align-items-center">
+        {/* <div className="subscribe-btn-div d-flex justify-content-center align-items-center">
           <button type="button" onClick={this.logCheckboxEvent.bind(this)} className="btn btn-primary subscribe-btn">Subscribe</button>
-        </div>  
+        </div>   */}
         
         <div className="row powered-by-div">
-          <div className="col-1 tippny-logo">
+          {/* <div className="col-1 tippny-logo">
             <img className="tippny-logo" src="https://cdn1.imggmi.com/uploads/2018/9/27/d7308d1adea7ef6b069f9403e0d15df1-full.jpg"></img>
+          </div> */}
+          <div className="col-8 offset-4">Powered by <a href="https://tippny.com/">Tippny</a></div>
+        </div>
+
+        <div className="row bottom-btn-row">
+          <div className="col-6">
+            <span onClick={this.props.closePopup} className="bottom-btn-text-span close-bottom-btn">I DON'T WANT OFFERS</span>
           </div>
-          <div className="col-10">Powered by <a href="https://tippny.com/">Tippny</a></div>
+          <div className="col-6">
+            <span onClick={this.logCheckboxEvent.bind(this)} className="bottom-btn-text-span subscribe-btn">GET NOTIFIED</span>
+          </div>
         </div>
      </div>
     );
