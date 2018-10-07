@@ -4,12 +4,15 @@ import './popup.css';
 class PopPupPresentationalComponent extends React.Component {
   constructor(props) {
     super(props);
-
+    console.log("constructor called");
     this.state = {"user_ref": "popup_"+props.userRef};
   }
 
   componentDidMount() {
+    console.log("componentDidMount called");
     document.addEventListener('fb_init', e => FB.XFBML.parse());
+    console.log("user_ref:", this.props.userRef);
+    this.setState({'user_ref': this.props.userRef});
   }
 
   logCheckboxEvent() {
@@ -99,6 +102,6 @@ export default class PopupController extends React.Component {
         </div>
       );
     }
-  }
+}
 
   
