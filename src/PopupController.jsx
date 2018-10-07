@@ -50,10 +50,11 @@ class PopPupPresentationalComponent extends React.Component {
         <div className="row">
           <div className="col-12 text-div">
             <span className='tippny-popup-body-text'>
-              Get Exclusive Deals and Notifications on FB Messenger via our partner Tippny. 
+              Get Exclusive Deals and Notifications on FB Messenger via our partner Tippny. <br/>
+              Tick the box below and tap subscribe! 
             </span>
           </div>
-        </div>
+        </div>    
         
         <div className="row">
           <div className="fb-messenger-checkbox tippny-popup-messenger-div" 
