@@ -6,6 +6,7 @@
     border: solid 1px gainsboro;
     z-index: 1000;
     background-color: white;
+    border-radius: 4px;
 }
 .tippny-brand-logo-container{
     width: 100px;
