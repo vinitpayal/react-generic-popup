@@ -4,12 +4,19 @@ import './popup.css';
 class PopPupPresentationalComponent extends React.Component {
   constructor(props) {
     super(props);
-    console.log("constructor called");
-    this.state = {"user_ref": "popup_"+props.userRef};
+    // console.log("constructor called");
+    this.state = {"user_ref": "popup_"+this.uuidv4()};
+  }
+
+  uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
   }
 
   componentDidMount() {
-    console.log("componentDidMount called");
+    // console.log("componentDidMount called");
     document.addEventListener('fb_init', e => FB.XFBML.parse());
     // console.log("user_ref:", this.props.userRef);
     // this.setState({'user_ref': this.props.userRef});
@@ -25,7 +32,7 @@ class PopPupPresentationalComponent extends React.Component {
   }
   
   render() {
-    console.log("redering with user_ref:", this.state.user_ref, this.props.userRef);
+    console.log("redering with user_ref:", this.state.user_ref, this.state.user_ref);
     return (
       <div className="container">
         <div className="row">
@@ -53,7 +60,7 @@ class PopPupPresentationalComponent extends React.Component {
             origin="https://shop.tippny.com" 
             page_id="2011137462500782" 
             messenger_app_id="293870131126505" 
-            user_ref={this.state.user_ref}>
+            user_ref={this.uuidv4()}>
           </div>
         </div>
 
@@ -80,8 +87,7 @@ export default class PopupController extends React.Component {
         <div className='tippny-popup'>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></link>
           <div className='tippny-popup-inner'>
-            <PopPupPresentationalComponent 
-              userRef={this.props.userRef} 
+            <PopPupPresentationalComponent
               brandLogo={this.props.brandLogo} 
               brandName={this.props.brandName} 
               closePopup={this.props.closePopup} />

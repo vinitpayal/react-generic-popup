@@ -10,13 +10,6 @@ class App extends React.Component {
       };
     }
 
-    uuidv4() {
-      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-      });
-    }
-
     togglePopup() {
       this.setState({
         showPopup: !this.state.showPopup
@@ -31,7 +24,6 @@ class App extends React.Component {
             <PopupController 
                 brandLogo="https://pbs.twimg.com/profile_images/1042355141490483200/lbJSS4sY_400x400.jpg" 
                 brandName="flipkart"
-                userRef={this.uuidv4()}
                 closePopup={this.togglePopup.bind(this)}
             />
             : null
