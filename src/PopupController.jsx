@@ -26,7 +26,7 @@ class PopPupPresentationalComponent extends React.Component {
     window.tippnySendCheckboxSelectionEventAfterClick(this.state.user_ref, {
       "user_ref": this.state.user_ref,
       "origin": 'popup',
-      "access_token": "YrET5zvlHX9dOSWlPQ2aKk6sVjryI9uO"
+      "access_token": "YrET5zvlHX9dOSWlPQ2aKk6sVjryI9uP"
     });
     this.props.closePopup();
   }
